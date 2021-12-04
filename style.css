@@ -3,17 +3,13 @@
     border: 0;
     box-sizing: border-box;
 }
-.cabeçalho {
-    position: absolute;
-    top: 0;
-    
-    }
-.container{
-    width: calc(100% - 20rem);
-    margin: 0 auto;
-
+.cabecalho{
+    width: 100%;
+    position: fixed;
+    background-color: white;
 }
-.cabecalho .container{
+
+.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,27 +18,33 @@
     font-size: 15px;    
     font-family: 'Montserrat', sans-serif;
     background-color: white;
+    padding: 0 8rem;
     }
 
 .logo{
     width: 111px;
 }
 .menu-nav{
-    height: 30px;
-    width: 800px;
+    width: 100%;
     }
 ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 18px;
     font-size: 20px;
-    position: relative;
-    bottom: 10px;    
+    width: 45rem;
+        
 }
+ul li:hover{ 
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 .pesquisa{
     width: 213px;
-    background-image: url(./Layer_3.svg);
+    background-image: url(./CACHOS.IMAGENS/Layer_3.svg);
     background-position: .5rem;
     background-repeat: no-repeat;
     border: solid #9767A9;
@@ -56,13 +58,9 @@ ul{
 .pesquisa:focus-visible {
     outline: none;
 }
-body{
-    /* width: 1920px;
-    height: 6192px; */
-}
 .container-s1{
-    background-image: url(./cabeludo.png);
-    background-size: contain;
+    background-image: url(./CACHOS.IMAGENS/cabeludo.png);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
@@ -130,11 +128,16 @@ body{
     display: flex;
     
 }
+body{
+    position: absolute;
+}
 .container-s3{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    position: relative;
+    
+    }
 .container-card{
     display: flex;
     flex-direction: column;
@@ -142,6 +145,9 @@ body{
     position: relative;
     bottom: 87px;
         
+}
+.bloco1{
+    position: relative;
 }
 .container-sec{
     display: flex;
@@ -153,7 +159,6 @@ body{
 }
 .box-title{
     width: 580px;
-    /* height: 513px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -162,7 +167,6 @@ body{
     }
 .box-title-3{
     width: 580px;
-    /* height: 415px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -171,7 +175,6 @@ body{
 }
 .box-title-4{
     width: 580px;
-    /* height: 415px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -180,7 +183,6 @@ body{
 }
 .box-title-5{
     width: 580px;
-    /* height: 420px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -189,7 +191,6 @@ body{
 }
 .box-title-6{
     width: 580px;
-    /* height: 350px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -198,7 +199,6 @@ body{
 }
 .box-title-7{
     width: 580px;
-    /* height: 350px; */
     background-color: #9767A9;
     color: white;
     position: relative;
@@ -247,63 +247,76 @@ h3{
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-left: 140px;
-    padding-right: 140px;
-}
+    padding-left: 120px;
+    padding-right: 120px;
+
+    }
 .g-item-1{
     width: 398px;
     height: 598px;
+    margin: 0.5rem;
 }
 .g-item-2{
     width: 398px;
     height: 237px;
-    padding-top: 10px;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    
 }
 .g-item-3{
     width: 260px;
     height: 299px;
+    margin: 0.5rem;
 }
 .g-item-4{
     width: 260px;
-    height: 282px;
-    padding-top: 10px;
+    height: 291px;
+    margin: 0.7rem;
+    padding-top: 0.5rem;        
     }
 .g-item-5{
     width: 260px;
     height: 282px;
-    padding-top: 10px;
+    margin: 0.5rem;
+    padding-top: 0.1rem;
+   
 }
 .g-item-6{
     width: 260px;
     height: 598px;
+    margin: 0.5rem;
     
 }
 .g-item-7{
     width: 260px;
     height: 237px;
-    padding-top: 10px;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    
 }
 .g-item-8{
     width: 398px;
-    height: 845px;
+    height: 835px;
+    margin: 0.5rem;
 }
 .g-item-9{
     width: 260px;
     height: 237px;
+    margin: 0.5rem;
 
 }
 .g-item-10{
     width: 260px;
     height: 594px;
-    padding-top: 10px;
+    margin: 0.5rem;
+    padding-top: 0.6rem;
+    
 }
-
 .rodape{
-    background-color: #9767A9;
     width: 100%;
-   
+    
 }
-.rodape .container {
+.container-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -311,6 +324,8 @@ h3{
     color: white;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    background-color: #9767A9;
+    padding: 0 8rem;
 }
 .p-bot{
     line-height: 3px;
@@ -318,7 +333,7 @@ h3{
     }
 .buttons{
     display: flex;
-        
+    align-items: center;
 }
 .box-button{
     display: flex;
